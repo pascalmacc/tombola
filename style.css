@@ -1,0 +1,304 @@
+body {
+    font-family: 'Merriweather', serif;
+    
+    grid-template-columns: 75% 25%;
+   
+}
+
+.container-main {
+    justify-content: space-around;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.last-button {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+}
+
+#cover {
+    background: url(img/christmas_background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#tabella {
+    margin-top: 1rem;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(10, 90px);
+    text-align: center;
+    font-size: 2rem;
+    justify-content: stretch;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    margin: 14px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    transition: all 2s ease;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+
+.extracted-number {
+    align-self: center;
+    font-size: 5.5rem;
+    display: grid;
+    width: 150px;
+    height: 150px;
+    color: red;
+    border: 10px solid red;
+    padding: 10px;
+    border-radius: 50%;
+    background: #E9C786;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.8);
+    transition: all .3s ease;
+    
+   
+}
+
+.reset {
+    align-self: end;
+    font-size: 1rem;
+    display: grid;
+    width: 100px;
+    height: 100px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    background: limegreen;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.8);
+    transition: all .3s ease;
+    
+}
+
+#muteButton,
+#playButton {
+    align-self: end;
+    font-size: 1.5rem;
+    color: white;
+    display: grid;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background: limegreen;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.8);
+    transition: all .3s ease;
+    
+}
+
+.estrai-numero {
+    text-align: center;
+    font-size: 2rem;
+    display: grid;
+    width: 200px;
+    height: 200px;
+    color: indianred;
+    padding: 20px;
+    border-radius: 50%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.8);
+    transition: all .3s ease;
+    
+}
+
+.estrai-numero:hover, .reset:hover {
+    cursor: pointer;
+}
+
+.estrai-numero:active, .reset:active {
+    box-shadow: 0xp 0px 0px 0px rgba(0,0,0,0.8);
+    transform: scale(0.9);
+}
+
+.found {
+    color: red;
+    background: #E9C786;
+    border-radius: 50%;
+    border: 5px solid red;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.8);
+    transform: scale(1.3);
+
+}
+
+.numeri_estratti {
+
+}
+
+.numeri_estratti h3 {
+    color: white;
+    margin: 14px 14px 0 14px;
+    
+}
+
+#ultimi_5 {
+    margin: 0 14px;
+    font-size: 4.5rem;
+    color: white;
+}
+
+
+#numeri_card {
+    z-index: 2000;
+    position: absolute;
+    width: 500px;
+    left: 37%;
+    top: 20%;
+}
+
+
+/*CSS FOR MOBILE*/
+
+@media only screen and (max-width: 1200px) {
+    #tabella {
+        margin-top: 0.6rem;
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: repeat(10, 40px);
+        text-align: center;
+        font-size: 1rem;
+        justify-content: stretch;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px black;
+        margin: 5px 2px;
+        background: white;
+        width: 25px;
+        height: 25px;
+        transition: all 2s ease;
+    }
+
+    .estrai-numero {
+        text-align: center;
+        font-size: 0.6rem;
+        display: grid;
+        width: 60px;
+        height: 60px;
+        color: indianred;
+        padding: 20px;
+        border-radius: 50%;
+        background: white;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.8);
+        transition: all .3s ease;
+        
+    }
+
+    .reset {
+        align-self: end;
+        font-size: 0.6rem;
+        display: grid;
+        width: 60px;
+        height: 60px;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        background: limegreen;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.8);
+        transition: all .3s ease;
+        
+    }
+
+    .last-button {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 1rem;
+    }
+
+
+    .extracted-number {
+        align-self: center;
+        font-size: 1rem;
+        display: grid;
+        width: 40px;
+        height: 40px;
+        color: red;
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 50%;
+        background: #E9C786;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.8);
+        transition: all .3s ease;
+        
+       
+    }
+    #ultimi_5 {
+        margin: 0 14px;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .numeri_estratti h3 {
+        font-size: 1rem;
+        color: white;
+        margin: 14px 14px 0 14px;
+        
+    }
+
+    .found {
+        color: red;
+        background: #E9C786;
+        border-radius: 50%;
+        border: 2px solid red;
+        box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.8);
+        transform: scale(1.3);
+    
+    }
+
+    #numeri_card {
+        z-index: 2000;
+        position: absolute;
+        width: 200px;
+        left: 37%;
+        top: 20%;
+    }
+    
+    
+   
+    
+  }
