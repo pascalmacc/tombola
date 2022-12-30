@@ -192,14 +192,15 @@ span:hover {
     }
 
     span {
+        font-size: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         border: solid 1px black;
         margin: 5px 2px;
         background: white;
-        width: 25px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
         transition: all 2s ease;
     }
 
@@ -224,10 +225,10 @@ span:hover {
 
     .reset {
         align-self: end;
-        font-size: 0.6rem;
+        font-size: 0.4rem;
         display: grid;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         color: white;
         padding: 10px;
         border-radius: 50%;
@@ -242,6 +243,7 @@ span:hover {
 
     .last-button {
         display: flex;
+        justify-content: space-around;
         flex-direction: column;
         position: relative;
         gap: 1rem;
@@ -297,6 +299,24 @@ span:hover {
         left: 37%;
         top: 20%;
     }
+
+    #muteButton,
+    #playButton {
+        display: flex;
+        align-self: end;
+        font-size: 1rem;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: limegreen;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow: 1px 2px 6px 4px rgba(0,0,0,0.8);
+        transition: all .3s ease;
+    
+}
     
     
    
